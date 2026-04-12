@@ -114,8 +114,12 @@ nav{
 
 /* BIG photo of owner — right side */
 .hero-photo{
-  position:absolute;right:0;bottom:0;
-  height:98vh;z-index:2;
+  position:absolute;
+  right:0;
+  top:80px;      /* 🔥 KEY FIX */
+  height:calc(100vh - 80px); /* 🔥 PERFECT FIT */
+  z-index:2;
+
   /* Use the "Less Talk More Action" image as primary */
   background:url('image/IMG_20260411_155913.png') center top/cover no-repeat;
   width:52vw;
